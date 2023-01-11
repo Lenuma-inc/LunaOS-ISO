@@ -1,0 +1,4 @@
+DISTRIB_ID="Hybrid"
+DISTRIB_RELEASE="rolling"
+DISTRIB_DESCRIPTION="Hybrid Linux"
+DISTRIB_CODENAME="HybridLinux"
