@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="hybridlinux"
+iso_name="hybridlinux_$(date +%Y%m)"
 iso_label="HybridLinux_$(date +%Y%m)"
 iso_publisher="Hybrid Linux <https://hybridproject.ml>"
 iso_application="Hybrid Linux Live/Rescue CD"
