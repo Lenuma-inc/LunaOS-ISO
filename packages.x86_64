@@ -33,7 +33,7 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-grml-zsh-config
+hybrid-zsh-config
 grub
 hdparm
 hyperv
@@ -47,8 +47,6 @@ less
 lftp
 libfido2
 libusb-compat
-linux-tkg-cfs-hybrid
-linux-tkg-cfs-hybrid-headers
 linux-firmware
 linux-firmware-marvell
 livecd-sounds
@@ -121,20 +119,52 @@ xfsprogs
 xl2tpd
 zsh
 
+# Hybrid Repos
+hybrid-mirrorlist
+hybrid-keyring
+
+# Gnome packages
+baobab
+cheese
+eog
+evince
+file-roller
+gdm-prime
+gedit
+gnome-backgrounds
+gnome-backgrounds
+gnome-color-manager
+gnome-control-center
+gnome-disk-utility
+gnome-keyring
+gnome-menus
+gnome-session
+gnome-settings-daemon
+gnome-shell-performance
+gnome-shell-extensions
+gnome-system-monitor
+gnome-console
+gnome-video-effects
+grilo-plugins
+gvfs
+malcontent
+mutter-x11-scaling
+nautilus
+sushi
+tracker3-miners
+xdg-user-dirs-gtk
+gthumb
+gnome-browser-connector
+adwaita-qt5
+adwaita-qt6
+
 # Chaotic-AUR
 chaotic-keyring
 chaotic-mirrorlist
 
 # Hybrid Kernel
 linux-hybrid
-linux-hybrid-mesa-tkg-git
-
-# Mhwd
-mhwd-hybrid
-mhwd-db-hybrid
-mhwd-nvidia-390xx
-mhwd-nvidia-470xx
-mhwd-nvidia
+linux-hybrid-headers
 
 # Installer
 calamares-hybrid
@@ -159,22 +189,6 @@ libva
 libva-utils
 libva-intel-driver
 intel-media-driver
-
-# xfce4 packages
-xfce4
-xfce4-goodies
-sddm
-kvantum
-qt5ct
-plank
-gparted
-gnome-terminal
-
-# Theme
-nordic-darker-theme
-sddm-nordic-theme-git
-kvantum-theme-nordic-git
-
 
 # BlueZ
 bluez-utils
@@ -265,7 +279,7 @@ winesync-header
 winesync-udev-rule
 
 # Xorg Drivers
-xf86-video-ati
+xf86-video-amdgpu
 xf86-video-openchrome
 xf86-video-qxl
 xf86-video-nouveau

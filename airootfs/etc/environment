@@ -6,6 +6,3 @@
 
 # Fix Cursor Size in Qt Apps on XWayland
 export XCURSOR_SIZE=24
-
-# Set Hybrid Linux LSB-Release File
-export LSB_ETC_LSB_RELEASE=/usr/local/share/lsb-release
