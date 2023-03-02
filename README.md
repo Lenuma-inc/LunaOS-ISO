@@ -36,6 +36,12 @@ Codespace with Sources for Building Hybrid ISO
 
   * [ ] Software
     * [ ] Create a Wellcome App(Like a Manjaro Hello)
+    * [ ] Fina a good alternative for Pamac
+    * [ ] Create a Hybrid Tweaker
+      * [ ] Disable unneeded Gnome services
+      * [ ] Enable/Disable Cloudflare DNS
+      * [ ] Enable/Disable AdGuard DNS
+
 
 * [x] Repo
   * [x] Hybrid Core auto-build
