@@ -2,9 +2,9 @@
 Codespace with Sources for Building Hybrid ISO
 
 ## Roadmap
-* [x] ISO
+* [ ] ISO
   * [x] Packages
-    * [x] Add vulkan drivers in ISO
+    * [x] Add vulkan drivers to ISO
     * [x] Add codecs to ISO
     * [ ] Minimal Gnome installation
     * [x] Boot on Mesa by default
@@ -36,7 +36,7 @@ Codespace with Sources for Building Hybrid ISO
 
   * [ ] Software
     * [ ] Create a Wellcome App(Like a Manjaro Hello)
-    * [ ] Fina a good alternative for Pamac
+    * [ ] Find a good alternative for Pamac
     * [ ] Create a Hybrid Tweaker
       * [ ] Disable unneeded Gnome services
       * [ ] Enable/Disable Cloudflare DNS
@@ -56,3 +56,9 @@ Codespace with Sources for Building Hybrid ISO
   * [ ] Simplify Repository Controll
   * [ ] Unbind most of the dependencies from chaotic-aur
 
+* [ ] Website
+  * [x] Find a domain - [hybridproject.ml](https://hybridproject.ml/)
+  * [x] Find a web-hosting - [InfinityFree](https://infinityfree.net/)
+  * [x] Create a Forum - [forum.hybridproject.ml](https://forum.hybridproject.ml/)
+    * [ ] Find a mail hosting with custom domain
+  * [ ] Create Website
