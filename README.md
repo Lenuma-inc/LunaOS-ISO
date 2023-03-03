@@ -35,10 +35,50 @@ Codespace with Sources for Building Hybrid ISO
 
     * [ ] Build optimized gnome-shell and mutter for x86_64v2 and x86_64v3
 
-  * [x] Tweaks
+  * [x] Hybrid Tweaks
+    * [x] Increased limits for Esync functionality
     * [x] Modprobe Tweaks
+      * [x] i915 driver
+        * [x] Framebuffer compress
+        * [x] Intel Fastboot
+      * [x] Disabling Watchdogs
+      * [x] AMDGPU full GPU control
+      * [x] Loaded modules for gamepads
+
+
     * [x] Profile.d Tweaks
+      * [x] Set RADV as defalut Vulkan driver for AMDGPU
+      * [x] Add RADV Tweaks
+        * [x] Enable Graphics Pipeline Library
+        * [x] Enable Ray-Tracing Support
+        * [x] Enable Video Decoding support
+      * [x] OBS-vkcapture fix for recording on X11
+      * [x] Qt-apps XCursor fix
+      * [x] VA-API Tweaks
+      * [x] Wayland Env Vars
+
     * [x] Sysctl Tweaks
+      * [x] Kernel
+        * [x] Disabled nmi_watchdog
+        * [x] Minimized system startup exhaust
+        * [x] CachyOS Sched Tuning
+
+      * [x] Virtual Memory
+        * [x] Swapping setted to 20(Use swap when you need it, giving priority to RAM)
+        * [x] Dirty Ratio setted to 20
+        * [x] Page Cluster setted to 0(Writes 1 page of memory to the swap)
+        * [x] Background Dirty Ratio setted to 10
+        * [x] Dirty Writeback Centisecs setted to 1000
+        * [x] Max Map Count setted to 16777216(Fixes startup/performance in some games)
+
+      * [x] Network Tweaks
+        * [x] IPv4 Tweaks
+        * [x] IPv6 Tweaks
+        * [ ] Optimize TCP
+
+      * [x] Other
+        * [x] i915.perf_stream_paranoid setted to 0(Fixes performance regression)
+
     * [x] Udev Tweaks
       * [x] AMD Radeon Power Management Tweaks
       * [x] HPET Tweaks
@@ -46,6 +86,15 @@ Codespace with Sources for Building Hybrid ISO
       * [x] I/O Schedules Tweaks
       * [x] HDD Sata Tweaks
       * [x] Other I/O Tweaks
+
+    * [x] Services(Package)
+      * [x] ananicy-cpp
+      * [x] zram-generator
+      * [x] systemd-oomd
+      * [x] uksmd
+      * [x] irqbalance
+      * [x] pci-latency(included in Hybrid Tweaks)
+      * [x] optimize-interruptfreq.service(included in Hybrid Tweaks)
 
   * [ ] Software
     * [ ] Create a Wellcome App(Like a Manjaro Hello)
@@ -68,12 +117,14 @@ Codespace with Sources for Building Hybrid ISO
     * [ ] [Ananicy-cpp](https://aur.archlinux.org/pkgbase/ananicy-cpp) and [ananicy-rules](https://aur.archlinux.org/pkgbase/ananicy-rules) Auto-build
     * [x] [amdgpu-pro-installer](https://aur.archlinux.org/pkgbase/amdgpu-pro-installer) Auto-build
     * [x] [winesync](https://aur.archlinux.org/pkgbase/winesync) Auto-build
+    * [ ] [nvlax-git](https://aur.archlinux.org/pkgbase/nvlax-git) Auto-build
 
   * [x] Hybrid Extra auto-build
     * [ ] Find good capacity and storage for auto-build
     * [x] [uksmd](https://aur.archlinux.org/pkgbase/uksmd) Auto-build
     * [x] [amd-vulkan-prefixes](https://aur.archlinux.org/pkgbase/amd-vulkan-prefixes) Auto-build
     * [x] [obs-studio-amf](https://gitlab.com/hybrid-project-developers/pkgbuilds/hybrid-extra-pkgbuilds/obs-studio-amf) and plugins Auto-build
+      * [ ] Running with AMDVLK-Pro driver for AMF
     * [x] [asusctl](https://aur.archlinux.org/pkgbase/asusctl) Auto-build
     * [ ] [asusctltray-git](https://aur.archlinux.org/pkgbase/asusctltray-git) Auto-build
     * [x] [fossilize-git](https://aur.archlinux.org/pkgbase/fossilize-git) Auto-build
