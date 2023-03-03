@@ -97,8 +97,8 @@ Codespace with Sources for Building Hybrid ISO
       * [x] optimize-interruptfreq.service(included in Hybrid Tweaks)
   
   * [x] Nvidia-Tweaks
-    * [ ] Support for dracut
-    * [ ] Enable Performance mode by default
+    * [x] Support for dracut
+    * [x] Enable Performance mode by default
 
   * [ ] Software
     * [ ] Create a Wellcome App(Like a Manjaro Hello)
