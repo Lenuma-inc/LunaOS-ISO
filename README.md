@@ -118,13 +118,12 @@ Codespace with Sources for Building Hybrid ISO
     * [x] Kernel Auto-build
     * [ ] LTS Kernel Auto-build
     * [x] Legacy Nvidia drivers(nvidia-390xx and high)
-    * [ ] [Ananicy-cpp](https://aur.archlinux.org/pkgbase/ananicy-cpp) and [ananicy-rules](https://aur.archlinux.org/pkgbase/ananicy-rules) Auto-build
     * [x] [amdgpu-pro-installer](https://aur.archlinux.org/pkgbase/amdgpu-pro-installer) Auto-build
     * [x] [winesync](https://aur.archlinux.org/pkgbase/winesync) Auto-build
-    * [ ] [nvlax-git](https://aur.archlinux.org/pkgbase/nvlax-git) Auto-build
 
   * [x] Hybrid Extra auto-build
     * [ ] Find good capacity and storage for auto-build
+    * [x] [Ananicy-cpp](https://aur.archlinux.org/pkgbase/ananicy-cpp) and [ananicy-rules](https://aur.archlinux.org/pkgbase/ananicy-rules) Auto-build
     * [x] [uksmd](https://aur.archlinux.org/pkgbase/uksmd) Auto-build
     * [x] [amd-vulkan-prefixes](https://aur.archlinux.org/pkgbase/amd-vulkan-prefixes) Auto-build
     * [x] [obs-studio-amf](https://gitlab.com/hybrid-project-developers/pkgbuilds/hybrid-extra-pkgbuilds/obs-studio-amf) and plugins Auto-build
@@ -132,6 +131,7 @@ Codespace with Sources for Building Hybrid ISO
     * [x] [asusctl](https://aur.archlinux.org/pkgbase/asusctl) Auto-build
     * [ ] [asusctltray-git](https://aur.archlinux.org/pkgbase/asusctltray-git) Auto-build
     * [x] [fossilize-git](https://aur.archlinux.org/pkgbase/fossilize-git) Auto-build
+    * [x] [nvlax-git](https://aur.archlinux.org/pkgbase/nvlax-git) Auto-build
     * [x] [openoffice-bin](https://aur.archlinux.org/pkgbase/openoffice-bin) Auto-build
     * [x] [xorg-xwayland-hidpi-vsync-fix](https://gitlab.com/hybrid-project-developers/pkgbuilds/hybrid-extra-pkgbuilds/xorg-xwayland-hidpi-vsync-fix) Auto-build
     * [x] [alac-git](https://aur.archlinux.org/pkgbase/alac-git), [daala-git](https://aur.archlinux.org/pkgbase/daala-git), [davs2](https://aur.archlinux.org/pkgbase/davs2) and [openjpeg](https://aur.archlinux.org/pkgbase/openjpeg)(lib32 in process) codecs Auto-Build
