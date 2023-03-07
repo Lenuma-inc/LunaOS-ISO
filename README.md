@@ -112,7 +112,7 @@ Codespace with Sources for Building Hybrid ISO
 * [x] Repo
   * [x] Hybrid Core auto-build
     * [ ] Find good capacity and storage for auto-build
-    * [ ] Add GRUB Auto-update hook
+    * [x] Add GRUB Auto-update hook
     * [x] Patched Neofetch Package
     * [x] Patched lsb-release
     * [x] Kernel Auto-build
@@ -129,7 +129,7 @@ Codespace with Sources for Building Hybrid ISO
     * [x] [obs-studio-amf](https://gitlab.com/hybrid-project-developers/pkgbuilds/hybrid-extra-pkgbuilds/obs-studio-amf) and plugins Auto-build
       * [ ] Running with AMDVLK-Pro driver for AMF
     * [x] [asusctl](https://aur.archlinux.org/pkgbase/asusctl) Auto-build
-    * [ ] [asusctltray-git](https://aur.archlinux.org/pkgbase/asusctltray-git) Auto-build
+    * [x] [asusctltray-git](https://aur.archlinux.org/pkgbase/asusctltray-git) Auto-build
     * [x] [fossilize-git](https://aur.archlinux.org/pkgbase/fossilize-git) Auto-build
     * [x] [nvlax-git](https://aur.archlinux.org/pkgbase/nvlax-git) Auto-build
     * [x] [openoffice-bin](https://aur.archlinux.org/pkgbase/openoffice-bin) Auto-build
