@@ -74,7 +74,7 @@ Codespace with Sources for Building Hybrid ISO
       * [x] Network Tweaks
         * [x] IPv4 Tweaks
         * [x] IPv6 Tweaks
-        * [ ] Optimize TCP
+        * [x] Optimize TCP
 
       * [x] Other
         * [x] i915.perf_stream_paranoid setted to 0(Fixes performance regression)
