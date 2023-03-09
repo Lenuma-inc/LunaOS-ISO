@@ -18,23 +18,23 @@ Codespace with Sources for Building Hybrid ISO
     * [x] Pacstrap support
     * [ ] Add more packages to installer
 
-  * [ ] Gnome
-    * [ ] Create Gnome Settings
-      * [ ] Extensions
-        * [ ] Blur My Shell
-        * [ ] AppIndicator/KStatusNotifierItem
-        * [ ] GSConnect
-        * [ ] Bluetooth Quick Connect
-        * [ ] Dock From Dash
-        * [ ] Pano
+  * [x] Gnome
+    * [x] Create Gnome Settings
+      * [x] Extensions
+        * [x] Blur My Shell
+        * [x] AppIndicator/KStatusNotifierItem
+        * [x] GSConnect
+        * [x] Bluetooth Quick Connect
+        * [x] Dock From Dash
+        * [x] Pano
 
-      * [ ] Tweaks
-        * [ ] Support x11-fractional-scaling
-        * [ ] Center New Windows
-        * [ ] Noto Font as default font
-        * [ ] MesloLGS NF as defalut mono font
+      * [x] Tweaks
+        * [x] Support x11-fractional-scaling
+        * [x] Center New Windows
+        * [x] Noto Font as default font
+        * [x] MesloLGS NF as defalut mono font
 
-    * [ ] Build optimized gnome-shell and mutter for x86_64v2 and x86_64v3
+    * [x] Build optimized gnome-shell and mutter for x86_64v2 and x86_64v3
 
   * [x] Hybrid Tweaks
     * [x] Increased limits for Esync functionality
