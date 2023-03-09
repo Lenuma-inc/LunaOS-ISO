@@ -132,6 +132,7 @@ Codespace with Sources for Building Hybrid ISO
     * [x] [asusctl](https://aur.archlinux.org/pkgbase/asusctl) Auto-build
     * [x] [asusctltray-git](https://aur.archlinux.org/pkgbase/asusctltray-git) Auto-build
     * [x] [fossilize-git](https://aur.archlinux.org/pkgbase/fossilize-git) Auto-build
+    * [ ] Patched ffmpeg Auto-build
     * [x] [nvlax-git](https://aur.archlinux.org/pkgbase/nvlax-git) Auto-build
     * [x] [gnome-shell-extension-blur-my-shell](https://aur.archlinux.org/pkgbase/gnome-shell-extension-blur-my-shell) Auto-build
     * [x] [gnome-shell-extension-pano-git](https://aur.archlinux.org/pkgbase/gnome-shell-extension-pano-git) Auto-build
