@@ -133,14 +133,14 @@ Codespace with Sources for Building Hybrid ISO
     * [x] [asusctltray-git](https://aur.archlinux.org/pkgbase/asusctltray-git) Auto-build
     * [x] [fossilize-git](https://aur.archlinux.org/pkgbase/fossilize-git) Auto-build
     * [x] [nvlax-git](https://aur.archlinux.org/pkgbase/nvlax-git) Auto-build
-    * [ ] [gnome-shell-extension-blur-my-shell](https://aur.archlinux.org/pkgbase/gnome-shell-extension-blur-my-shell) Auto-build
-    * [ ] [gnome-shell-extension-pano-git](https://aur.archlinux.org/pkgbase/gnome-shell-extension-pano-git) Auto-build
-    * [ ] [gnome-shell-extension-bluetooth-quick-connect](https://aur.archlinux.org/pkgbase/gnome-shell-extension-bluetooth-quick-connect) Auto-build
-    * [ ] [gnome-shell-extension-gsconnect](https://aur.archlinux.org/pkgbase/gnome-shell-extension-gsconnect) Auto-build
-    * [ ] [gnome-shell-extension-dock-from-dash-git](https://aur.archlinux.org/pkgbase/gnome-shell-extension-dock-from-dash-git) Auto-build
-    * [ ] [gnome-shell-performance](https://aur.archlinux.org/pkgbase/gnome-shell-performance) Auto-build
-    * [ ] [mutter-x11-scaling](https://aur.archlinux.org/pkgbase/mutter-x11-scaling) Auto-build
-    * [ ] [hybrid-gnome-meta](https://gitlab.com/hybrid-project-developers/pkgbuilds/hybrid-extra-pkgbuilds/hybrid-gnome-meta) Auto-build
+    * [x] [gnome-shell-extension-blur-my-shell](https://aur.archlinux.org/pkgbase/gnome-shell-extension-blur-my-shell) Auto-build
+    * [x] [gnome-shell-extension-pano-git](https://aur.archlinux.org/pkgbase/gnome-shell-extension-pano-git) Auto-build
+    * [x] [gnome-shell-extension-bluetooth-quick-connect](https://aur.archlinux.org/pkgbase/gnome-shell-extension-bluetooth-quick-connect) Auto-build
+    * [x] [gnome-shell-extension-gsconnect](https://aur.archlinux.org/pkgbase/gnome-shell-extension-gsconnect) Auto-build
+    * [x] [gnome-shell-extension-dock-from-dash-git](https://aur.archlinux.org/pkgbase/gnome-shell-extension-dock-from-dash-git) Auto-build
+    * [x] [gnome-shell-performance](https://aur.archlinux.org/pkgbase/gnome-shell-performance) Auto-build
+    * [x] [mutter-x11-scaling](https://aur.archlinux.org/pkgbase/mutter-x11-scaling) Auto-build
+    * [x] [hybrid-gnome-meta](https://gitlab.com/hybrid-project-developers/pkgbuilds/hybrid-extra-pkgbuilds/hybrid-gnome-meta) Auto-build
     * [x] [openoffice-bin](https://aur.archlinux.org/pkgbase/openoffice-bin) Auto-build
     * [x] [xorg-xwayland-hidpi-vsync-fix](https://gitlab.com/hybrid-project-developers/pkgbuilds/hybrid-extra-pkgbuilds/xorg-xwayland-hidpi-vsync-fix) Auto-build
     * [x] [alac-git](https://aur.archlinux.org/pkgbase/alac-git), [daala-git](https://aur.archlinux.org/pkgbase/daala-git), [davs2](https://aur.archlinux.org/pkgbase/davs2) and [openjpeg](https://aur.archlinux.org/pkgbase/openjpeg)(lib32 in process) codecs Auto-Build
