@@ -3,20 +3,24 @@ Codespace with Sources for Building Hybrid ISO
 
 ## Roadmap
 * [ ] ISO
+  * [ ] Recreate ISO profile
+
+  * [ ] ISO Auto-build
+
   * [x] Packages
     * [x] Add vulkan drivers to ISO
     * [x] Add codecs to ISO
-    * [ ] Minimal Gnome installation
+    * [x] Minimal Gnome installation
     * [x] Boot on Mesa by default
 
   * [x] Calamares
-    * [ ] Support Offline installation
-    * [ ] Set dracut as default initramfs generator
-    * [ ] Add systemd-boot support for UEFI
+    * [x] Support only Online installation
+    * [x] Set dracut as default initramfs generator
+    * [x] Add systemd-boot support for UEFI
     * [x] Nvidia auto-install
     * [x] Architechture auto-detect
     * [x] Pacstrap support
-    * [ ] Add more packages to installer
+    * [x] Add more packages to installer
 
   * [x] Gnome
     * [x] Create Gnome Settings
@@ -94,6 +98,7 @@ Codespace with Sources for Building Hybrid ISO
       * [x] systemd-oomd
       * [x] uksmd
       * [x] irqbalance
+      * [x] dbus-broker
       * [x] pci-latency(included in Hybrid Tweaks)
       * [x] optimize-interruptfreq.service(included in Hybrid Tweaks)
   
@@ -113,6 +118,12 @@ Codespace with Sources for Building Hybrid ISO
 * [x] Repo
   * [x] Hybrid Core auto-build
     * [ ] Find good capacity and storage for auto-build
+    * [ ] Create hybrid-base packages
+      * [ ] Branding Logo
+        * [ ] Color
+        * [ ] Monochome
+      * [ ] os-release
+    * [ ] Create Hybrid ZSH config
     * [x] Add GRUB Auto-update hook
     * [x] Patched Neofetch Package
     * [x] Patched lsb-release
