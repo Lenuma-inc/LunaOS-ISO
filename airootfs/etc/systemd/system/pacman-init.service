@@ -8,13 +8,8 @@ Before=archlinux-keyring-wkd-sync.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-# Arch Linux Keyring
 ExecStart=/usr/bin/pacman-key --init
 ExecStart=/usr/bin/pacman-key --populate
-
-# Chaotic-AUR Keyring
-ExecStart=/usr/bin/pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
-ExecStart=/usr/bin/pacman-key --lsign-key FBA220DFC880C036
 
 [Install]
 WantedBy=multi-user.target

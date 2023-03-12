@@ -119,52 +119,21 @@ xfsprogs
 xl2tpd
 zsh
 
-# Hybrid Repos
-hybrid-mirrorlist
-hybrid-keyring
+# Latest Nvidia driver
+nvidia-dkms
+nvidia-utils
 
-# Gnome packages
-baobab
-cheese
-eog
-evince
-file-roller
-gdm-prime
-gedit
-gnome-backgrounds
-gnome-backgrounds
-gnome-color-manager
-gnome-control-center
-gnome-disk-utility
-gnome-keyring
-gnome-menus
-gnome-session
-gnome-settings-daemon
-gnome-shell-performance
-gnome-shell-extensions
-gnome-system-monitor
-gnome-console
-gnome-video-effects
-grilo-plugins
-gvfs
-malcontent
-mutter-x11-scaling
-nautilus
-sushi
-tracker3-miners
-xdg-user-dirs-gtk
-gthumb
-gnome-browser-connector
-adwaita-qt5
-adwaita-qt6
+# Hybrid packages
+hybrid-tweaks
+hybrid-base
+hybrid-mirrorlist
+hybrid-gnome-meta
+linux-hybrid
+linux-hybrid-headers
 
 # Chaotic-AUR
 chaotic-keyring
 chaotic-mirrorlist
-
-# Hybrid Kernel
-linux-hybrid
-linux-hybrid-headers
 
 # Installer
 calamares-hybrid
@@ -196,9 +165,6 @@ bluez-tools
 bluez-libs
 bluez-plugins
 bluez-hid2hci
-
-# Zram
-zram-generator
 
 # Pipewire
 pipewire
