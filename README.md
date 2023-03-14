@@ -3,7 +3,7 @@ Codespace with Sources for Building Hybrid ISO
 
 ## Roadmap
 * [ ] ISO
-  * [ ] Recreate ISO profile
+  * [x] Recreate ISO profile
 
   * [ ] ISO Auto-build
 
@@ -118,17 +118,15 @@ Codespace with Sources for Building Hybrid ISO
 * [x] Repo
   * [x] Hybrid Core auto-build
     * [ ] Find good capacity and storage for auto-build
-    * [ ] Create hybrid-base packages
-      * [ ] Branding Logo
-        * [ ] Color
-        * [ ] Monochome
-      * [ ] os-release
-    * [ ] Create Hybrid ZSH config
+    * [ ] Create hybrid-base packages(In testing release)
+    * [x] Create hybrid-filesystem
+      * [x] Branding Logo
+      * [x] os-release
+    * [x] Create Hybrid ZSH config
     * [x] Add GRUB Auto-update hook
     * [x] Patched Neofetch Package
     * [x] Patched lsb-release
     * [x] Kernel Auto-build
-    * [ ] LTS Kernel Auto-build
     * [x] Legacy Nvidia drivers(nvidia-390xx and high)
     * [x] [amdgpu-pro-installer](https://aur.archlinux.org/pkgbase/amdgpu-pro-installer) Auto-build
     * [x] [winesync](https://aur.archlinux.org/pkgbase/winesync) Auto-build
@@ -143,7 +141,6 @@ Codespace with Sources for Building Hybrid ISO
     * [x] [asusctl](https://aur.archlinux.org/pkgbase/asusctl) Auto-build
     * [x] [asusctltray-git](https://aur.archlinux.org/pkgbase/asusctltray-git) Auto-build
     * [x] [fossilize-git](https://aur.archlinux.org/pkgbase/fossilize-git) Auto-build
-    * [ ] Patched ffmpeg Auto-build
     * [x] [nvlax-git](https://aur.archlinux.org/pkgbase/nvlax-git) Auto-build
     * [x] [gnome-shell-extension-blur-my-shell](https://aur.archlinux.org/pkgbase/gnome-shell-extension-blur-my-shell) Auto-build
     * [x] [gnome-shell-extension-pano-git](https://aur.archlinux.org/pkgbase/gnome-shell-extension-pano-git) Auto-build
@@ -162,9 +159,6 @@ Codespace with Sources for Building Hybrid ISO
 
 * [x] Kernel
   * [x] Support Latest Kernel Version
-    * [ ] Add built-in DDC/CI support
-  * [ ] Support LTS Kernel Version(In process)
-    * [ ] Add built-in DDC/CI support
 
 * [ ] Website
   * [x] Find a domain - [hybridproject.ml](https://hybridproject.ml/)
