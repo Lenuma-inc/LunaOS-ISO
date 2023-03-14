@@ -125,9 +125,11 @@ nvidia-utils
 
 # Hybrid packages
 hybrid-tweaks
-hybrid-base
 hybrid-mirrorlist
 hybrid-gnome-meta
+hybrid-filesystem
+neofetch-hybrid
+lsb-release-hybrid
 linux-hybrid
 linux-hybrid-headers
 
