@@ -1,7 +1,9 @@
 # hybrid-linux-archiso
+
 Codespace with Sources for Building Hybrid ISO
 
 ## Roadmap
+
 * [ ] ISO
   * [x] Recreate ISO profile
 
@@ -51,7 +53,6 @@ Codespace with Sources for Building Hybrid ISO
       * [x] Disabling Watchdogs
       * [x] AMDGPU full GPU control
       * [x] Loaded modules for gamepads
-
 
     * [x] Profile.d Tweaks
       * [x] Set RADV as defalut Vulkan driver for AMDGPU
@@ -115,7 +116,6 @@ Codespace with Sources for Building Hybrid ISO
       * [ ] Disable unneeded Gnome services
       * [ ] Enable/Disable Cloudflare DNS
       * [ ] Enable/Disable AdGuard DNS
-
 
 * [x] Repo
   * [x] Hybrid Core auto-build
