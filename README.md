@@ -5,6 +5,8 @@ Codespace with Sources for Building Hybrid ISO
 * [ ] ISO
   * [x] Recreate ISO profile
 
+  * [ ] Add Chaotic-AUR and ALHP.GO keyrings
+
   * [ ] ISO Auto-build
 
   * [x] Packages
