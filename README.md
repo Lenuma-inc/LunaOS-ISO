@@ -155,6 +155,7 @@ Codespace with Sources for Building Hybrid ISO
     * [x] [openoffice-bin](https://aur.archlinux.org/pkgbase/openoffice-bin) Auto-build
     * [x] [xorg-xwayland-hidpi-vsync-fix](https://gitlab.com/hybrid-project-developers/pkgbuilds/hybrid-extra-pkgbuilds/xorg-xwayland-hidpi-vsync-fix) Auto-build
     * [x] [alac-git](https://aur.archlinux.org/pkgbase/alac-git), [daala-git](https://aur.archlinux.org/pkgbase/daala-git), [davs2](https://aur.archlinux.org/pkgbase/davs2) and [openjpeg](https://aur.archlinux.org/pkgbase/openjpeg)(lib32 in process) codecs Auto-Build
+    * [ ] [vkdevicechooser](https://aur.archlinux.org/pkgbase/vkdevicechooser) Auto-build
   * [ ] Package and Repo Signing
   * [ ] Simplify Repository Control
   * [ ] Unbind most of the dependencies from chaotic-aur
