@@ -6,7 +6,7 @@ b43-fwcutter
 base
 bind
 brltty
-broadcom-wl
+broadcom-wl-dkms
 btrfs-progs
 clonezilla
 cloud-init
@@ -151,7 +151,7 @@ opencl-mesa
 # Mesa (Multilib)
 lib32-mesa
 lib32-mesa-demos
-lib32-utils
+lib32-mesa-utils
 lib32-mesa-vdpau
 lib32-opencl-mesa
 
@@ -272,8 +272,7 @@ asusctl
 rog-control-center
 openrgb
 transmission-gtk
-amdgpu-opencl-switcher
-amdgpu-vulkan-switcher
+amd-vulkan-prefixes
 grub-btrfs
 timeshift
 timeshift-autosnap
