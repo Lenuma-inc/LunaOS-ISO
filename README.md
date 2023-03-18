@@ -7,7 +7,7 @@ Codespace with Sources for Building Hybrid ISO
 * [ ] ISO
   * [x] Recreate ISO profile
 
-  * [ ] Add Chaotic-AUR and ALHP.GO keyrings
+  * [x] Add Chaotic-AUR and ALHP.GO keyrings
 
   * [ ] ISO Auto-build
 
@@ -120,7 +120,7 @@ Codespace with Sources for Building Hybrid ISO
 * [x] Repo
   * [x] Hybrid Core auto-build
     * [ ] Find good capacity and storage for auto-build
-    * [ ] Create hybrid-base packages(In testing release)
+    * [x] Create hybrid-base packages(In testing release)
     * [x] Create hybrid-filesystem
       * [x] Branding Logo
       * [x] os-release
@@ -165,6 +165,7 @@ Codespace with Sources for Building Hybrid ISO
 
 * [ ] Website
   * [x] Find a domain - [hybridproject.ml](https://hybridproject.ml/)
+    * [ ] Find a paid domain
   * [x] Find a web-hosting - [InfinityFree](https://infinityfree.net/)
   * [x] Create a Forum - [forum.hybridproject.ml](https://forum.hybridproject.ml/)
     * [ ] Find a mail hosting with custom domain

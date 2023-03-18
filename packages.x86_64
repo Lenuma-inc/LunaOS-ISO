@@ -3,7 +3,6 @@ amd-ucode
 arch-install-scripts
 archinstall
 b43-fwcutter
-base
 bind
 brltty
 broadcom-wl-dkms
@@ -127,7 +126,7 @@ nvidia-utils
 hybrid-tweaks
 hybrid-mirrorlist
 hybrid-gnome-meta
-hybrid-filesystem
+hybrid-base
 neofetch-hybrid
 lsb-release-hybrid
 linux-hybrid
