@@ -2,4 +2,5 @@ root:x:0:root
 adm:x:4:hybrid
 wheel:x:10:hybrid
 uucp:x:14:hybrid
-hybrid:x:1000:
+nopasswdlogin:x:966:hybrid
+hybrid:x:1000:hybrid
