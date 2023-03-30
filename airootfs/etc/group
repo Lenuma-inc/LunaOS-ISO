@@ -1,6 +1,13 @@
 root:x:0:root
+sys:x:3:hybrid
 adm:x:4:hybrid
 wheel:x:10:hybrid
-uucp:x:14:hybrid
-nopasswdlogin:x:966:hybrid
-hybrid:x:1000:hybrid
+network:x:18:hybrid
+storage:x:21:hybrid
+power:x:23:hybrid
+audio:x:15:hybrid
+video:x:16:hybrid
+scanner:x:20:hybrid
+optical:x:22:hybrid
+rfkill:x:983:hybrid
+users:x:985:
