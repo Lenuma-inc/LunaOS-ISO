@@ -41,7 +41,7 @@ echo "------------------" >> "/etc/motd"
 
 # Enable systemd services
 echo "Enabling base services"
-systemctl enable NetworkManager.service systemd-timesyncd.service bluetooth.service
+systemctl enable NetworkManager.service systemd-timesyncd.service bluetooth.service sddm.service
 echo "Enabling virtualization services"
 systemctl enable vboxservice.service vmtoolsd.service vmware-vmblock-fuse.service
 echo "Setting graphical target by default"

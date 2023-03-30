@@ -125,7 +125,7 @@ nvidia-utils
 # Hybrid packages
 hybrid-tweaks
 hybrid-mirrorlist
-hybrid-gnome-meta
+hybrid-plasma-settings
 hybrid-base
 neofetch-hybrid
 lsb-release-hybrid
