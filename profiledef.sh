@@ -3,7 +3,7 @@
 
 iso_name="hybridlinux_$(date +%Y%m)"
 iso_label="HybridLinux_$(date +%Y%m)"
-iso_publisher="Hybrid Linux <https://hybridproject.ml>"
+iso_publisher="Hybrid Project Developers Team <https://hybridproject.ml>"
 iso_application="Hybrid Linux Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
