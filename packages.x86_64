@@ -286,3 +286,7 @@ rtl88x2ce-dkms
 rtl88xxau-aircrack-dkms-git
 rtw88-dkms-git
 rtw89-dkms-git
+
+# ALHP Repository
+alhp-keyring
+alhp-mirrorlist
