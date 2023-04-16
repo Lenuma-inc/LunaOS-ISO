@@ -5,7 +5,6 @@ archinstall
 b43-fwcutter
 bind
 brltty
-broadcom-wl-dkms
 btrfs-progs
 clonezilla
 cloud-init
@@ -217,7 +216,6 @@ ttf-liberation
 # Additional
 networkmanager
 dbus-broker
-hidpi-daemon
 
 # Vulkan
 vulkan-tools
@@ -270,9 +268,21 @@ vlc
 asusctl
 rog-control-center
 openrgb
-transmission-gtk
 amd-vulkan-prefixes
-grub-btrfs
 timeshift
 timeshift-autosnap
 firefox
+
+# Network Drivers
+broadcom-wl-dkms
+e1000e-dkms
+8188eu-aircrack-dkms-git
+8188fu-dkms-git
+8192eu-dkms
+r8152-dkms
+r8168-dkms
+rtl88x2bu-dkms-git
+rtl88x2ce-dkms
+rtl88xxau-aircrack-dkms-git
+rtw88-dkms-git
+rtw89-dkms-git
