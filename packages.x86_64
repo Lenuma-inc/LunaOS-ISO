@@ -107,7 +107,7 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils-nox
+virtualbox-guest-utils
 vpnc
 wireless-regdb
 wireless_tools
@@ -128,8 +128,8 @@ hybrid-plasma-settings
 hybrid-base
 neofetch-hybrid
 lsb-release-hybrid
-linux-hybrid
-linux-hybrid-headers
+linux-zen
+linux-zen-headers
 
 # Chaotic-AUR
 chaotic-keyring
@@ -275,7 +275,6 @@ firefox
 
 # Network Drivers
 broadcom-wl-dkms
-e1000e-dkms
 8188eu-aircrack-dkms-git
 8188fu-dkms-git
 8192eu-dkms
