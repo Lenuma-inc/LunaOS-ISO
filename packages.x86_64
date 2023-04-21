@@ -276,14 +276,7 @@ firefox
 # Network Drivers
 broadcom-wl-dkms
 8188eu-aircrack-dkms-git
-8188fu-dkms-git
-8192eu-dkms
-r8152-dkms
-r8168-dkms
-rtl88x2bu-dkms-git
-rtl88x2ce-dkms
 rtl88xxau-aircrack-dkms-git
-rtw88-dkms-git
 rtw89-dkms-git
 
 # ALHP Repository
