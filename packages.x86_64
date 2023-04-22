@@ -44,7 +44,7 @@ hwinfo
 inxi
 libgsf
 libopenraw
-#mlocate
+mlocate
 ntp
 power-profiles-daemon
 reflector
