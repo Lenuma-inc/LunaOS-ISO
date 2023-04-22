@@ -32,7 +32,6 @@ gpart
 gpm
 gptfdisk
 hybrid-zsh-config
-grub
 hdparm
 hyperv
 intel-ucode
