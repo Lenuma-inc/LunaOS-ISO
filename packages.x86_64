@@ -83,6 +83,8 @@ plasma-nm
 powerdevil
 xdg-desktop-portal
 xdg-desktop-portal-kde
+qt5-quickcontrols
+kdeconnect
 kwallet-pam
 
 #Hunspell(для проверки орфографии в firefox и kate)
