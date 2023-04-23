@@ -2,7 +2,6 @@
 archinstall
 alacritty
 konsole
-arch-install-scripts
 pacman-contrib
 iptables-nft
 base
@@ -17,13 +16,11 @@ inetutils
 less
 linux-firmware
 logrotate
-man-db
-man-pages
+#man-db
+#man-pages
 mdadm
 nano
-nano-syntax-highlighting
 perl
-s-nail
 sudo
 sysfsutils
 systemd-sysvcompat
@@ -36,7 +33,6 @@ xclip
 ## General system
 dmidecode
 dmraid
-downgrade
 git
 gpm
 hwdetect
@@ -75,9 +71,9 @@ noto-fonts
 noto-fonts-extra
 noto-fonts-cjk
 noto-fonts-emoji
-ttf-liberation
 
-#Plasma(по идее все пакеты отсюда зависимости plasma но возможно они не подхватываются поэтому не видно аплета сети)
+
+#Plasma
 bluedevil
 plasma-nm
 powerdevil
@@ -87,22 +83,27 @@ qt5-quickcontrols
 kdeconnect
 kwallet-pam
 
-#Hunspell(для проверки орфографии в firefox и kate)
+#Hunspell
 hunspell
 hunspell-en_us 
 hunspell-ru 
 
 # Additional
-networkmanager
 dbus-broker
-
 
 ## Live iso specific
 arch-install-scripts
-memtest86+
+mkinitcpio
 mkinitcpio-archiso
+mkinitcpio-nfs-utils
+memtest86+
+memtest86+-efi
 pv
 syslinux
+
+## Compress
+zstd
+xz
 
 ## Live iso tools
 clonezilla
@@ -155,6 +156,7 @@ alsa-plugins
 alsa-utils
 ffmpegthumbnailer
 gst-libav
+phonon-qt5-gstreamer
 gst-plugin-pipewire
 gst-plugins-bad
 gst-plugins-base
@@ -166,8 +168,8 @@ sof-firmware
 wireplumber
 
 ##VLC
-vlc
-phonon-qt5-vlc
+#vlc
+#phonon-qt5-vlc
 
 ## Network
 bind
@@ -241,14 +243,7 @@ alhp-keyring
 alhp-mirrorlist
 
 # Default Software
-steam
-protonup-qt
-goverlay
-pamac-nosnap
-libpamac-nosnap
-asusctl
-rog-control-center
-openrgb
 timeshift
 firefox
 kcalc 
+dragon
