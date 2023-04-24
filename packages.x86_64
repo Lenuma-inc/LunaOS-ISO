@@ -42,7 +42,6 @@ libgsf
 libopenraw
 mlocate
 ntp
-power-profiles-daemon
 reflector
 rsync
 wget
