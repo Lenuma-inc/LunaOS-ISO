@@ -16,8 +16,8 @@ inetutils
 less
 linux-firmware
 logrotate
-#man-db
-#man-pages
+man-db
+man-pages
 mdadm
 nano
 perl
@@ -60,7 +60,7 @@ exfatprogs
 f2fs-tools
 jfsutils
 nilfs-utils
-reiserfsprogs 
+reiserfsprogs
 xfsprogs
 udftools
 lvm2
@@ -84,8 +84,8 @@ kwallet-pam
 
 #Hunspell
 hunspell
-hunspell-en_us 
-hunspell-ru 
+hunspell-en_us
+hunspell-ru
 
 # Additional
 dbus-broker
@@ -218,6 +218,7 @@ hybrid-tweaks
 hybrid-mirrorlist
 hybrid-plasma-settings
 hybrid-base
+hybrid-zsh-config
 neofetch-hybrid
 lsb-release-hybrid
 linux-zen
@@ -244,5 +245,6 @@ alhp-mirrorlist
 # Default Software
 timeshift
 firefox
-kcalc 
-dragon
+kcalc
+mpv
+hybrid-mpv-settings
