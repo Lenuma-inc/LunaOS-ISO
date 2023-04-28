@@ -4,7 +4,6 @@ alacritty
 konsole
 pacman-contrib
 iptables-nft
-base
 base-devel
 archlinux-keyring
 cryptsetup
@@ -114,6 +113,7 @@ hdparm
 ## Boot
 efibootmgr
 efitools
+refind
 
 ## CPU
 amd-ucode
