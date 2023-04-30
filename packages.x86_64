@@ -121,8 +121,6 @@ intel-ucode
 
 ## XORG
 xf86-input-libinput
-xf86-video-amdgpu
-xf86-video-ati
 xorg-server
 xorg-xdpyinfo
 xorg-xinit
@@ -134,9 +132,6 @@ xf86-input-libinput
 xf86-input-synaptics
 xf86-input-vmmouse
 xf86-input-void
-xf86-video-fbdev
-xf86-video-openchrome
-xf86-video-qxl
 
 ## Mesa
 mesa
@@ -145,7 +140,6 @@ mesa-utils
 ## Network hardware
 b43-fwcutter
 broadcom-wl-dkms
-8188eu-aircrack-dkms-git
 rtl88xxau-aircrack-dkms-git
 rtw89-dkms-git
 
@@ -153,7 +147,6 @@ rtw89-dkms-git
 alsa-firmware
 alsa-plugins
 alsa-utils
-ffmpegthumbnailer
 gst-libav
 phonon-qt5-gstreamer
 gst-plugin-pipewire
@@ -171,31 +164,7 @@ wireplumber
 #phonon-qt5-vlc
 
 ## Network
-bind
-dhclient
-dnsmasq
-ethtool
-iwd
-modemmanager
-nbd
-ndisc6
-net-tools
-netctl
 networkmanager
-networkmanager-openconnect
-networkmanager-openvpn
-nss-mdns
-openconnect
-openvpn
-ppp
-pptpclient
-rp-pppoe
-usb_modeswitch
-vpnc
-whois
-wireless-regdb
-wpa_supplicant
-xl2tpd
 
 ## Bluetooth
 bluez
