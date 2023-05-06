@@ -12,7 +12,9 @@ After=etc-pacman.d-gnupg.mount
 Type=oneshot
 RemainAfterExit=yes
 ExecStart=/usr/bin/pacman-key --init
-ExecStart=/usr/bin/pacman-key --populate archlinux
+ExecStart=/usr/bin/pacman-key --populate archlinux chaotic alhp
 
+
+# Add keys for ALHP
 [Install]
 WantedBy=multi-user.target
