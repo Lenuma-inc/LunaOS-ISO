@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="107">
+  <name>Colloid cursors theme</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>vinceliuice</author>
+  <homepage>https://store.kde.org/p/1831077</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>81</rating>
+  <downloads>36280</downloads>
+  <installedfile>/home/norz3nkde/.icons/nshSFi-Colloid-cursors/*</installedfile>
+  <id>1831077</id>
+  <releasedate>2022-06-17</releasedate>
+  <summary>Colloid cursors theme</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/32/24/44/1831077/logo-g9175.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/32/24/44/1831077/logo-g9175.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTU0Nzg5OTUiLCJvIjoiMSIsInMiOiI3MjI2MjQwOWI3MWYyM2MwYzc1N2Y0NzQxM2U3MGI1ZjAxMWM1MWNlYzdhNjIyYmVjYmI0ZTc4ODE1NmU3YjBmMzlmY2NhMzEyZTU5NzdiMzNkNjNmMjZlZjQ4MjFkNDMwZGM5Njc4MTdjNGY5N2VjMDdhNDFlMzlhM2QxZmVlMiIsInQiOjE2ODIxNDE2NDAsInN0ZnAiOm51bGwsInN0aXAiOiIxNzguOTUuMTk1LjIyMyJ9.ajfcrSWpHNVn9uo5w2OVa4oO6Mdo7oFeVOhmDV_JkyQ/Colloid-cursors.tar.gz</payload>
+  <tags>cursor,unix,gplv3,linux,original-product</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

@@ -1,0 +1,5 @@
+[Applications][org.telegram.desktop]
+Seen=true
+
+[Notifications]
+PopupPosition=TopCenter

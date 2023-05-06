@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="112">
+  <name>Colloid color-schemes theme</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>vinceliuice</author>
+  <homepage>https://store.kde.org/p/1738676</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>58</rating>
+  <downloads>21262</downloads>
+  <installedfile>/home/norz3nkde/.local/share/color-schemes/ColloidLight.colors</installedfile>
+  <installedfile>/home/norz3nkde/.local/share/color-schemes/ColloidDark.colors</installedfile>
+  <installedfile>/home/norz3nkde/.local/share/color-schemes/ColloidLightNord.colors</installedfile>
+  <installedfile>/home/norz3nkde/.local/share/color-schemes/ColloidDarkNord.colors</installedfile>
+  <id>1738676</id>
+  <releasedate>2022-05-31</releasedate>
+  <summary>Colloid theme for KDE Plasma</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/32/24/44/1738676/screenshot-20220317-184546.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/32/24/44/1738676/screenshot-20220317-184546.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTQwMDc5MTUiLCJvIjoiMSIsInMiOiJlODgxMmYxMWU0MTA1OWE0MGQyYjljZDNkMTE5ZDU4MjBkMmFkZTRiMmE5MTBmZDRlOGQ4NGM4NDEwY2I3Y2RiYzc5ZjQ4NTMzMWE2YzY3YTM3MjM2NjA5ZjA3OGY2MzI4MTYwOWMwOGFjMDk4Yjg1ZWJiOGE5OGMxZDQ5ZTE4MSIsInQiOjE2ODIxNDE1OTcsInN0ZnAiOm51bGwsInN0aXAiOiIxNzguOTUuMTk1LjIyMyJ9.Mn3r8x_-gavyXmw7p8irHQ2NYnLVHLRazyOMmSm3VxU/Colloid.tar.gz</payload>
+  <tags>colorscheme,theme,unix,linux,kde,gplv3,plasma,original-product</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

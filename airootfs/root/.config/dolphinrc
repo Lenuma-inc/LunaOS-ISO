@@ -1,0 +1,33 @@
+MenuBar=Disabled
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
+
+[CreateDialog]
+LastMimeType=application/x-compressed-tar
+
+[General]
+Version=202
+ViewPropsTimestamp=2023,3,24,15,46,46.495
+
+[KFileDialog Settings]
+Places Icons Auto-resize=true
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+1366x768 screen: Height=500
+1366x768 screen: Width=522
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=16
+ToolButtonStyle=IconOnly
+
+[PlacesPanel]
+IconSize=-1
+
+[Toolbar mainToolBar]
+ToolButtonStyle=IconOnly

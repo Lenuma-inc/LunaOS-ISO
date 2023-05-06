@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="101">
+  <name>Colloid sddm theme</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>vinceliuice</author>
+  <homepage>https://store.kde.org/p/1738693</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>50</rating>
+  <downloads>25040</downloads>
+  <installedfile>/tmp/Colloid-dark.tar.xz</installedfile>
+  <id>1738693</id>
+  <releasedate>2022-03-17</releasedate>
+  <summary>Colloid theme for KDE Plasma</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/32/24/44/1738693/preview-dark.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/32/24/44/1738693/preview-dark.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDc1MjAyOTgiLCJvIjoiMSIsInMiOiJmYzZmZGJiODhlNDhhYzljM2Y3ZjM4OTUzNTg3ZDMyZDZiMTkxN2U2MzhkMjQwMDVmN2Q1MjdiNzBhNzA5Y2NiNDY2ZmMwMWU0YmY1ZTAzM2UxOWQyYzNjNmZmZGNkMzJmYmNiMjM4NTQxMzNmOWVjZDYxZWNmYWM0N2Y2ODUxYSIsInQiOjE2ODIxNDE2MTEsInN0ZnAiOm51bGwsInN0aXAiOiIxNzguOTUuMTk1LjIyMyJ9.wuG5vXAhZjzFCySeE1aIIrgBF7aLevsMe5GgGtw6S-g/Colloid-dark.tar.xz</payload>
+  <tags>unix,original-product,gplv3,linux</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

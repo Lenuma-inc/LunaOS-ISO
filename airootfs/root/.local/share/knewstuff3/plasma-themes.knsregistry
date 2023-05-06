@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="104">
+  <name>Colloid dark nord plasma</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>vinceliuice</author>
+  <homepage>https://store.kde.org/p/1812322</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>50</rating>
+  <downloads>955</downloads>
+  <installedfile>/home/norz3nkde/.local/share/plasma/desktoptheme/Colloid-dark-nord</installedfile>
+  <id>1812322</id>
+  <releasedate>2023-03-31</releasedate>
+  <summary>Colloid dark nord plasma theme</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/32/24/44/1812322/screenshot-20220531-100900.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/32/24/44/1812322/screenshot-20220531-100900.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2ODAyMzM0ODAiLCJvIjoiMSIsInMiOiIwZGNlYjgxZmIxNmI0NjE2MTQyMDE5ODE4NDU3ZTkxYTMwMTlkYmExNWUwZDZlMDEwMzlkY2E3N2ExYjE0YzM5OTJmNjk4YzY1NzU4ZjRlYjA3Y2NhZmQ2NzhmNjk0NGY4YTQyYmYwZDFiOTc5Y2M2YjU2ZDM4N2M4ZGY0OWU1MyIsInQiOjE2ODIxNDE2MDAsInN0ZnAiOm51bGwsInN0aXAiOiIxNzguOTUuMTk1LjIyMyJ9.vyHqI_ay6NznYI9OIeB0ePx3KF_tZhLcpfX4JjKH9bE/Colloid-dark-nord.tar.xz</payload>
+  <tags>gplv3,linux,kde,theme,unix,original-product,plasma</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>
