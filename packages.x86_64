@@ -143,7 +143,6 @@ broadcom-wl-dkms
 rtl88xxau-aircrack-dkms-git
 8188eu-dkms-git
 rtw89-dkms-git
-81
 
 ## Audio hardware
 alsa-firmware
