@@ -177,6 +177,7 @@ unrar
 unzip
 unace
 p7zip
+zip
 squashfs-tools
 
 # Latest Nvidia driver
