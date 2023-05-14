@@ -10,6 +10,7 @@ rfkill:x:983:hybrid
 video:x:986:hybrid
 storage:x:988:hybrid
 audio:x:995:hybrid
+realtime:x:995:hybrid
 users:x:985:hybrid
 nopasswdlogin:x:966:hybrid
 autologin:x:967:hybrid

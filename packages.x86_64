@@ -72,6 +72,16 @@ noto-fonts-emoji
 
 
 #Plasma
+plasma
+kde-system
+ark
+filelight
+kalk
+kcalc
+kcharselect
+kdf
+kdialog
+kwalletmanager
 bluedevil
 plasma-nm
 powerdevil
@@ -105,15 +115,12 @@ xz
 
 ## Live iso tools
 clonezilla
-gpart
-gparted
 grsync
 hdparm
 
 ## Boot
 efibootmgr
 efitools
-refind
 
 ## CPU
 amd-ucode
@@ -187,7 +194,6 @@ nvidia-utils
 # Hybrid packages
 hybrid-tweaks
 hybrid-mirrorlist
-hybrid-plasma-settings
 hybrid-base
 hybrid-zsh-config
 neofetch-hybrid
@@ -202,6 +208,8 @@ chaotic-mirrorlist
 # Installer
 calamares-hybrid
 hybrid-calamares-config
+grub
+os-prober
 
 ## Virt Tools
 open-vm-tools
@@ -214,7 +222,6 @@ alhp-keyring
 alhp-mirrorlist
 
 # Default Software
-timeshift
 firefox
 kcalc
 mpv
