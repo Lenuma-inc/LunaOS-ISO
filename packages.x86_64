@@ -37,6 +37,7 @@ gpm
 hwdetect
 hwinfo
 inxi
+lsof
 libgsf
 libopenraw
 mlocate
@@ -46,7 +47,6 @@ rsync
 wget
 xdg-user-dirs
 xdg-utils
-
 
 ## Filesystem
 parted
@@ -64,20 +64,18 @@ xfsprogs
 udftools
 lvm2
 
-# Fonts
+## Fonts
 noto-fonts
 noto-fonts-extra
 noto-fonts-cjk
 noto-fonts-emoji
 
-
-#Plasma
+## Plasma
 plasma
 kde-system
 ark
 filelight
 kalk
-kcalc
 kcharselect
 kdf
 kdialog
@@ -91,12 +89,12 @@ qt5-quickcontrols
 kdeconnect
 kwallet-pam
 
-#Hunspell
+## Hunspell
 hunspell
 hunspell-en_us
 hunspell-ru
 
-# Additional
+## Additional
 dbus-broker
 
 ## Live iso specific
@@ -167,10 +165,6 @@ pipewire-pulse
 sof-firmware
 wireplumber
 
-##VLC
-#vlc
-#phonon-qt5-vlc
-
 ## Network
 networkmanager
 
@@ -178,7 +172,7 @@ networkmanager
 bluez
 bluez-utils
 
-# Archives support
+## Archives support
 lrzip
 unrar
 unzip
@@ -187,11 +181,11 @@ p7zip
 zip
 squashfs-tools
 
-# Latest Nvidia driver
+## Latest Nvidia driver
 nvidia-dkms
 nvidia-utils
 
-# Hybrid packages
+## Hybrid packages
 hybrid-tweaks
 hybrid-mirrorlist
 hybrid-base
@@ -201,11 +195,11 @@ lsb-release-hybrid
 linux-zen
 linux-zen-headers
 
-# Chaotic-AUR
+## Chaotic-AUR
 chaotic-keyring
 chaotic-mirrorlist
 
-# Installer
+## Installer
 calamares-hybrid
 hybrid-calamares-config
 grub
@@ -217,12 +211,9 @@ qemu-guest-agent
 spice-vdagent
 virtualbox-guest-utils
 
-# ALHP Repository
-alhp-keyring
-alhp-mirrorlist
-
-# Default Software
+## Default Software
 firefox
 kcalc
+kate
 mpv
 hybrid-mpv-settings
