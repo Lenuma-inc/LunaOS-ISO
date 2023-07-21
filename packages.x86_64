@@ -1,15 +1,9 @@
 ## Base system
-archinstall
-alacritty
-konsole
-pacman-contrib
-iptables-nft
 base-devel
 archlinux-keyring
 cryptsetup
 device-mapper
 diffutils
-dracut
 edk2-shell
 inetutils
 less
@@ -24,9 +18,7 @@ sudo
 sysfsutils
 systemd-sysvcompat
 texinfo
-which
 micro
-zsh
 xclip
 
 ## General system
@@ -36,15 +28,10 @@ git
 gpm
 hwdetect
 hwinfo
-inxi
 lsof
-libgsf
-libopenraw
 mlocate
 ntp
-reflector
 rsync
-wget
 xdg-user-dirs
 xdg-utils
 
@@ -70,24 +57,23 @@ noto-fonts-extra
 noto-fonts-cjk
 noto-fonts-emoji
 
-## Plasma
-plasma
-kde-system
-ark
-filelight
-kalk
-kcharselect
-kdf
-kdialog
-kwalletmanager
-bluedevil
-plasma-nm
-powerdevil
-xdg-desktop-portal
-xdg-desktop-portal-kde
-qt5-quickcontrols
-kdeconnect
-kwallet-pam
+## GNOME
+gnome-shell-performance 
+mutter-performance
+gnome-terminal
+gedit
+gnome-calculator
+gnome-backgrounds
+gnome-control-center
+gnome-disk-utility
+gnome-software
+gnome-shell-extension-dash-to-panel
+gnome-shell-extension-appindicator
+xdg-desktop-portal-gnome
+qgnomeplatform-qt5
+lunaos-gnome-settings
+adw-gtk3
+gdm
 
 ## Hunspell
 hunspell
@@ -143,11 +129,7 @@ mesa
 mesa-utils
 
 ## Network hardware
-b43-fwcutter
 broadcom-wl-dkms
-rtl88xxau-aircrack-dkms-git
-8188eu-dkms-git
-rtw89-dkms-git
 
 ## Audio hardware
 alsa-firmware
@@ -185,13 +167,10 @@ squashfs-tools
 nvidia-dkms
 nvidia-utils
 
-## Hybrid packages
-hybrid-tweaks
-hybrid-mirrorlist
-hybrid-base
-hybrid-zsh-config
-neofetch-hybrid
-lsb-release-hybrid
+## LunaOS packages
+lunaos-settings
+lunaos-mirrorlist
+lunaos-hooks
 linux-zen
 linux-zen-headers
 
@@ -200,8 +179,8 @@ chaotic-keyring
 chaotic-mirrorlist
 
 ## Installer
-calamares-hybrid
-hybrid-calamares-config
+calamares-lunaos
+lunaos-calamares-config
 grub
 os-prober
 
@@ -213,7 +192,3 @@ virtualbox-guest-utils
 
 ## Default Software
 firefox
-kcalc
-kate
-mpv
-hybrid-mpv-settings
