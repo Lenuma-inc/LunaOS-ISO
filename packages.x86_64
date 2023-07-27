@@ -3,21 +3,11 @@ base-devel
 archlinux-keyring
 cryptsetup
 device-mapper
-diffutils
 edk2-shell
-inetutils
-less
 linux-firmware
-logrotate
-man-db
-man-pages
 mdadm
 nano
-perl
 sudo
-sysfsutils
-systemd-sysvcompat
-texinfo
 micro
 xclip
 
@@ -60,6 +50,7 @@ noto-fonts-emoji
 ## GNOME
 gnome-shell-performance 
 mutter-performance
+lunaos-gnome-settings
 gnome-terminal
 gedit
 gnome-calculator
@@ -67,13 +58,9 @@ gnome-backgrounds
 gnome-control-center
 gnome-disk-utility
 gnome-software
-gnome-shell-extension-dash-to-panel
-gnome-shell-extension-appindicator
 xdg-desktop-portal-gnome
 qgnomeplatform-qt5
-lunaos-gnome-settings
 adw-gtk3
-gdm
 
 ## Hunspell
 hunspell
@@ -170,7 +157,7 @@ nvidia-utils
 ## LunaOS packages
 lunaos-settings
 lunaos-mirrorlist
-lunaos-hooks
+lunaos-branding
 linux-zen
 linux-zen-headers
 
@@ -179,7 +166,7 @@ chaotic-keyring
 chaotic-mirrorlist
 
 ## Installer
-calamares-lunaos
+lunaos-calamares
 lunaos-calamares-config
 grub
 os-prober

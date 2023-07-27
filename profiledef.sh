@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="hybridlinux_$(date +%Y%m)"
-iso_label="HybridLinux_$(date +%Y%m)"
-iso_publisher="Hybrid Project Developers Team <https://hybridproject.ml>"
-iso_application="Hybrid Linux Live/Rescue CD"
+iso_name="lunaos_$(date +%Y%m)"
+iso_label="LunaOS_$(date +%Y%m)"
+iso_publisher="Lenuma Team"
+iso_application="LunaOS Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')
