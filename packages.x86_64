@@ -58,7 +58,8 @@ gnome-calculator
 gnome-backgrounds
 gnome-control-center
 gnome-disk-utility
-gnome-software
+pamac-aur
+gnome-system-monitor
 xdg-desktop-portal-gnome
 qgnomeplatform-qt5
 adw-gtk3
