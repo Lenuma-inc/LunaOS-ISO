@@ -1,14 +1,29 @@
 ## Base system
+base
 base-devel
 archlinux-keyring
 cryptsetup
 device-mapper
+diffutils
+inetutils
+less
+logrotate
+lsb-release
+man-db
+man-pages
 edk2-shell
 linux-firmware
 mdadm
 nano
 sudo
+iptables-nft
+perl
+s-nail
+sysfsutils
+systemd-sysvcompat
+texinfo
 micro
+glibc
 xclip
 
 ## General system
