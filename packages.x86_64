@@ -40,6 +40,10 @@ rsync
 xdg-user-dirs
 xdg-utils
 
+## Fonts
+noto-fonts
+
+
 ## Filesystem
 parted
 btrfs-progs
