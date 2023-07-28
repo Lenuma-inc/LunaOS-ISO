@@ -41,14 +41,8 @@ xfsprogs
 udftools
 lvm2
 
-## Fonts
-noto-fonts
-noto-fonts-extra
-noto-fonts-cjk
-noto-fonts-emoji
-
 ## GNOME
-gnome-shell-performance 
+gnome-shell-performance
 mutter-performance
 lunaos-gnome-settings
 gnome-terminal
@@ -61,11 +55,6 @@ gnome-software
 xdg-desktop-portal-gnome
 qgnomeplatform-qt5
 adw-gtk3
-
-## Hunspell
-hunspell
-hunspell-en_us
-hunspell-ru
 
 ## Additional
 dbus-broker
@@ -113,7 +102,6 @@ xf86-input-void
 
 ## Mesa
 mesa
-mesa-utils
 
 ## Network hardware
 broadcom-wl-dkms
@@ -155,7 +143,6 @@ nvidia-dkms
 nvidia-utils
 
 ## LunaOS packages
-lunaos-settings
 lunaos-mirrorlist
 lunaos-branding
 linux-zen
@@ -172,7 +159,6 @@ grub
 os-prober
 
 ## Virt Tools
-open-vm-tools
 qemu-guest-agent
 spice-vdagent
 virtualbox-guest-utils
