@@ -49,8 +49,6 @@ udftools
 lvm2
 
 ## GNOME
-gnome-shell-performance
-mutter-performance
 lunaos-gnome-settings
 gnome-terminal
 gedit
