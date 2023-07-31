@@ -143,6 +143,7 @@ squashfs-tools
 
 ## LunaOS packages
 lunaos-mirrorlist
+lunaos-zram-defaults
 lunaos-branding
 linux-zen
 linux-zen-headers
