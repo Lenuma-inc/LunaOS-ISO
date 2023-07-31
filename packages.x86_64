@@ -2,7 +2,6 @@
 base
 archlinux-keyring
 cryptsetup
-grub
 device-mapper
 edk2-shell
 linux-firmware
