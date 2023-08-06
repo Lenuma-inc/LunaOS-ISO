@@ -5,26 +5,18 @@ cryptsetup
 device-mapper
 edk2-shell
 linux-firmware
-linux-firmware-marvell-git
 mdadm
 nano
 sudo
-iptables-nft
-sysfsutils
-systemd-sysvcompat
-texinfo
 micro
 xclip
+reflector
 
 ## General system
-dmidecode
-dmraid
 git
-gpm
 hwdetect
 hwinfo
 lsof
-mlocate
 ntp
 rsync
 xdg-user-dirs
@@ -35,7 +27,6 @@ noto-fonts
 noto-fonts-cjk
 
 ## Filesystem
-parted
 btrfs-progs
 dosfstools
 ntfs-3g
@@ -43,9 +34,6 @@ mtools
 gpart
 exfatprogs
 f2fs-tools
-jfsutils
-nilfs-utils
-reiserfsprogs
 xfsprogs
 
 ## GNOME
@@ -57,9 +45,9 @@ gnome-backgrounds
 gnome-control-center
 gnome-disk-utility
 gnome-system-monitor
-xdg-desktop-portal-gnome
-qgnomeplatform-qt5
-adw-gtk3
+gnome-keyring
+gnome-menus
+gnome-session
 
 ## Additional
 dbus-broker
@@ -112,16 +100,9 @@ mesa
 broadcom-wl-dkms
 
 ## Audio hardware
-alsa-firmware
-alsa-plugins
-alsa-utils
-gst-libav
-gst-plugins-bad
-gst-plugins-ugly
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
-sof-firmware
 wireplumber
 
 ## Network
@@ -142,6 +123,7 @@ squashfs-tools
 
 ## LunaOS packages
 lunaos-mirrorlist
+lunaos-keyring
 lunaos-zram-defaults
 lunaos-branding
 linux-zen
@@ -154,8 +136,6 @@ chaotic-mirrorlist
 ## Installer
 lunaos-calamares
 lunaos-calamares-config
-grub
-os-prober
 
 ## Virt Tools
 qemu-guest-agent

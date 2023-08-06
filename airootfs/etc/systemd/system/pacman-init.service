@@ -1,20 +1,17 @@
-#
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 [Unit]
 Description=Initializes Pacman keyring
-Wants=haveged.service
-After=haveged.service
 Requires=etc-pacman.d-gnupg.mount
-After=etc-pacman.d-gnupg.mount
+After=etc-pacman.d-gnupg.mount time-sync.target
+BindsTo=etc-pacman.d-gnupg.mount
+Before=archlinux-keyring-wkd-sync.service
 
 [Service]
 Type=oneshot
 RemainAfterExit=yes
 ExecStart=/usr/bin/pacman-key --init
-ExecStart=/usr/bin/pacman-key --populate archlinux chaotic alhp
+ExecStart=/usr/bin/pacman-key --recv-key 3056513887B78AEB 78B2BAAB82C8D511 --keyserver keyserver.ubuntu.com
+ExecStart=/usr/bin/pacman-key --lsign-key 3056513887B78AEB 78B2BAAB82C8D511
+ExecStart=/usr/bin/pacman-key --populate
 
-
-# Add keys for ALHP
 [Install]
 WantedBy=multi-user.target
