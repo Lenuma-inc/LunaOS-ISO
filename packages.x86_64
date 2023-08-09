@@ -38,6 +38,7 @@ xfsprogs
 
 ## GNOME
 lunaos-gnome-settings
+gdm
 gnome-terminal
 gedit
 gnome-calculator
