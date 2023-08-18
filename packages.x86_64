@@ -143,5 +143,6 @@ qemu-guest-agent
 spice-vdagent
 virtualbox-guest-utils
 
-## Default Software
+## Firefox
 firefox
+lunaos-firefox-settings
