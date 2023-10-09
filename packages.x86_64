@@ -49,6 +49,7 @@ gnome-system-monitor
 gnome-keyring
 gnome-menus
 gnome-session
+xdg-desktop-portal-gnome
 
 ## Additional
 dbus-broker
