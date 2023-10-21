@@ -52,7 +52,10 @@ gnome-session
 xdg-desktop-portal-gnome
 
 ## Additional
-dbus-broker
+libfprint
+fprintd
+modemmanager
+usb_modeswitch
 
 ## Live iso specific
 arch-install-scripts
