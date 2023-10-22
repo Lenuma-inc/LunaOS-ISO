@@ -42,13 +42,13 @@ gdm
 gnome-terminal
 gedit
 gnome-calculator
-gnome-backgrounds
 gnome-control-center
 gnome-disk-utility
 gnome-system-monitor
 gnome-keyring
 gnome-menus
 gnome-session
+xdg-user-dirs-gtk
 xdg-desktop-portal-gnome
 
 ## Additional
