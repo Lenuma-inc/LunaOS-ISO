@@ -103,15 +103,13 @@ mesa
 
 ## Network hardware
 broadcom-wl-dkms
+networkmanager
 
 ## Audio hardware
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
 wireplumber
-
-## Network
-networkmanager
 
 ## Bluetooth
 bluez
@@ -147,6 +145,7 @@ lunaos-calamares-config
 qemu-guest-agent
 spice-vdagent
 virtualbox-guest-utils
+virtualbox-host-dkms
 
 ## Firefox
 firefox
