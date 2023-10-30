@@ -48,7 +48,6 @@ gnome-system-monitor
 gnome-keyring
 gnome-menus
 gnome-session
-xdg-user-dirs-gtk
 xdg-desktop-portal-gnome
 
 ## Additional
@@ -114,6 +113,7 @@ wireplumber
 ## Bluetooth
 bluez
 bluez-utils
+bluez-hid2hci
 
 ## Archives support
 lrzip
