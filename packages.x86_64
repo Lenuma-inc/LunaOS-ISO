@@ -145,7 +145,6 @@ lunaos-calamares-config
 qemu-guest-agent
 spice-vdagent
 virtualbox-guest-utils
-virtualbox-host-dkms
 
 ## Firefox
 firefox
