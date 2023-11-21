@@ -129,6 +129,7 @@ lunaos-mirrorlist
 lunaos-keyring
 lunaos-zram-defaults
 lunaos-branding
+lunaos-bash-config
 lunaos-hooks
 linux-zen
 linux-zen-headers
