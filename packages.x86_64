@@ -55,6 +55,7 @@ libfprint
 fprintd
 modemmanager
 usb_modeswitch
+plymouth
 
 ## Live iso specific
 arch-install-scripts
