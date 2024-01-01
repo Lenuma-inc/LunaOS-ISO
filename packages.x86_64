@@ -39,8 +39,8 @@ xfsprogs
 ## GNOME
 lunaos-gnome-settings
 gdm
-gnome-terminal
-gedit
+gnome-console
+gnome-text-editor
 gnome-calculator
 gnome-control-center
 gnome-disk-utility
