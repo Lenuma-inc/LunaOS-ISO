@@ -15,10 +15,8 @@ rate-mirrors
 ## General system
 git
 hwdetect
-hwinfo
 lsof
 ntp
-rsync
 xdg-user-dirs
 xdg-utils
 
@@ -132,8 +130,8 @@ lunaos-zram-defaults
 lunaos-branding
 lunaos-bash-config
 lunaos-hooks
-linux-zen
-linux-zen-headers
+linux-xanmod
+linux-xanmod-headers
 
 ## Chaotic-AUR
 chaotic-keyring
