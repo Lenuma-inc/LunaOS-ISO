@@ -10,7 +10,7 @@ nano
 sudo
 micro
 xclip
-rate-mirrors
+refresh-mirrors
 
 ## General system
 git
