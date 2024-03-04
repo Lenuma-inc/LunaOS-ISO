@@ -3,7 +3,6 @@ base
 archlinux-keyring
 cryptsetup
 device-mapper
-edk2-shell
 linux-firmware
 mdadm
 nano
@@ -12,6 +11,7 @@ micro
 xclip
 refresh-mirrors
 haveged
+nbd
 
 ## General system
 git
@@ -34,6 +34,10 @@ gpart
 exfatprogs
 f2fs-tools
 xfsprogs
+bcachefs-tools
+nfs-utils
+nilfs-utils
+nvme-cli
 
 ## GNOME
 lunaos-gnome-settings
@@ -52,8 +56,6 @@ xdg-desktop-portal-gnome
 ## Additional
 libfprint
 fprintd
-modemmanager
-usb_modeswitch
 plymouth
 
 ## Live iso specific
@@ -64,20 +66,17 @@ mkinitcpio-nfs-utils
 memtest86+
 memtest86+-efi
 pv
-syslinux
 
 ## Compress
 zstd
 xz
 
-## Live iso tools
-clonezilla
-grsync
-hdparm
-
 ## Boot
 efibootmgr
 efitools
+syslinux
+systemd
+edk2-shell
 
 ## CPU
 amd-ucode
@@ -103,8 +102,11 @@ mesa
 ## Network hardware
 broadcom-wl-dkms
 networkmanager
+modemmanager
+usb_modeswitch
 
 ## Audio hardware
+alsa-utils
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
@@ -131,8 +133,8 @@ lunaos-zram-defaults
 lunaos-branding
 lunaos-bash-config
 lunaos-hooks
-linux-xanmod
-linux-xanmod-headers
+linux-lts
+linux-lts-headers
 
 ## Chaotic-AUR
 chaotic-keyring
