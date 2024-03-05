@@ -1,38 +1,131 @@
-## Base system
+## Base
+arch-install-scripts
 base
-archlinux-keyring
-cryptsetup
-device-mapper
-edk2-shell
+linux-lts
+linux-lts-headers
 linux-firmware
-mdadm
-nano
-sudo
+hdparm
+memtest86+
+memtest86+-efi
+mkinitcpio
+mkinitcpio-archiso
+mkinitcpio-nfs-utils
 micro
 xclip
-refresh-mirrors
-
-## General system
-git
-hwdetect
 lsof
-ntp
-xdg-user-dirs
-xdg-utils
+nano
+lrzip
+unrar
+unzip
+unace
+p7zip
+zip
+sudo
+alsa-utils
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+wireplumber
+archlinux-keyring
+git
+refresh-mirrors
+haveged
+
+## Additional
+libfprint
+fprintd
+plymouth
 
 ## Fonts
 noto-fonts
 noto-fonts-cjk
 
+## X system
+xf86-input-libinput
+xf86-video-amdgpu
+xf86-video-ati
+xorg-server
+xorg-xdpyinfo
+xorg-xinit
+xorg-xinput
+xorg-xkill
+xorg-xrandr
+
+## Bluetooth
+bluez
+bluez-utils
+bluez-hid2hci
+
+## Ucode
+amd-ucode
+intel-ucode
+
+## VM
+open-vm-tools
+virtualbox-guest-utils
+hyperv
+qemu-guest-agent
+
 ## Filesystem
+bcachefs-tools
 btrfs-progs
+cryptsetup
+dmraid
 dosfstools
-ntfs-3g
-mtools
-gpart
+e2fsprogs
 exfatprogs
 f2fs-tools
+fatresize
+gpart
+lvm2
+gptfdisk
+mtools
+nfs-utils
+nilfs-utils
+ntfs-3g
+nvme-cli
+mdadm
 xfsprogs
+udftools
+
+## Boot
+edk2-shell
+efibootmgr
+syslinux
+
+## Network
+broadcom-wl-dkms
+dhcpcd
+dmidecode
+dnsmasq
+modemmanager
+networkmanager
+ethtool
+nbd
+ppp
+pptpclient
+pv
+xl2tpd
+usb_modeswitch
+
+
+## LunaOS packages
+lunaos-mirrorlist
+lunaos-keyring
+lunaos-zram-defaults
+lunaos-branding
+lunaos-bash-config
+lunaos-hooks
+lunaos-calamares
+lunaos-calamares-config
+
+## Chaotic-AUR
+chaotic-keyring
+chaotic-mirrorlist
+
+## Firefox
+firefox
+lunaos-firefox-settings
 
 ## GNOME
 lunaos-gnome-settings
@@ -47,105 +140,5 @@ gnome-keyring
 gnome-menus
 gnome-session
 xdg-desktop-portal-gnome
-
-## Additional
-libfprint
-fprintd
-modemmanager
-usb_modeswitch
-plymouth
-
-## Live iso specific
-arch-install-scripts
-mkinitcpio
-mkinitcpio-archiso
-mkinitcpio-nfs-utils
-memtest86+
-memtest86+-efi
-pv
-syslinux
-
-## Compress
-zstd
-xz
-
-## Live iso tools
-clonezilla
-grsync
-hdparm
-
-## Boot
-efibootmgr
-efitools
-
-## CPU
-amd-ucode
-intel-ucode
-
-## XORG
-xf86-input-libinput
-xorg-server
-xorg-xdpyinfo
-xorg-xinit
-xorg-xinput
-xorg-xkill
-xf86-input-elographics
-xf86-input-evdev
-xf86-input-libinput
-xf86-input-synaptics
-xf86-input-vmmouse
-xf86-input-void
-
-## Mesa
-mesa
-
-## Network hardware
-broadcom-wl-dkms
-networkmanager
-
-## Audio hardware
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
-wireplumber
-
-## Bluetooth
-bluez
-bluez-utils
-bluez-hid2hci
-
-## Archives support
-lrzip
-unrar
-unzip
-unace
-p7zip
-zip
-squashfs-tools
-
-## LunaOS packages
-lunaos-mirrorlist
-lunaos-keyring
-lunaos-zram-defaults
-lunaos-branding
-lunaos-bash-config
-lunaos-hooks
-linux-xanmod
-linux-xanmod-headers
-
-## Chaotic-AUR
-chaotic-keyring
-chaotic-mirrorlist
-
-## Installer
-lunaos-calamares
-lunaos-calamares-config
-
-## Virt Tools
-qemu-guest-agent
-spice-vdagent
-virtualbox-guest-utils
-
-## Firefox
-firefox
-lunaos-firefox-settings
+xdg-user-dirs
+xdg-utils
