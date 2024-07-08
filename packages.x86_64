@@ -112,7 +112,6 @@ pv
 xl2tpd
 usb_modeswitch
 
-
 ## LunaOS packages
 lunaos-mirrorlist
 lunaos-keyring
@@ -122,6 +121,7 @@ lunaos-bash-config
 lunaos-hooks
 lunaos-calamares
 lunaos-calamares-config
+lpm
 
 ## Chaotic-AUR
 chaotic-keyring
