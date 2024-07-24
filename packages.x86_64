@@ -134,7 +134,6 @@ lunaos-firefox-settings
 ## GNOME
 lunaos-gnome-settings
 gdm
-gnome-console
 gnome-text-editor
 gnome-calculator
 gnome-control-center
