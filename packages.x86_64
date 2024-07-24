@@ -137,6 +137,7 @@ gdm
 gnome-text-editor
 gnome-calculator
 gnome-control-center
+gnome-console
 gnome-disk-utility
 gnome-system-monitor
 gnome-keyring
