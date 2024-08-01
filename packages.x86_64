@@ -13,7 +13,6 @@ mkinitcpio-nfs-utils
 micro
 xclip
 lsof
-nano
 lrzip
 unrar
 unzip
@@ -32,8 +31,6 @@ refresh-mirrors
 haveged
 
 ## Additional
-libfprint
-fprintd
 plymouth
 
 ## Fonts
@@ -98,7 +95,6 @@ efibootmgr
 syslinux
 
 ## Network
-broadcom-wl-dkms
 dhcpcd
 dmidecode
 dnsmasq
