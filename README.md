@@ -9,7 +9,8 @@ https://github.com/Lenuma-inc/Weekly-ISO-Rebuilds/releases
 
 - [Arch-ISO](https://gitlab.archlinux.org/archlinux/archiso)
 - [EndeavourOS-ISO](https://github.com/endeavouros-team/EndeavourOS-ISO)
-- [Calamares](https://github.com/CachyOS/cachyos-calamares/tree/cachyos-grub)
+- [Calamares](https://gitlab.com/LunaOS/iso/lunaos-calamares)
+- [mkarchiso](https://gitlab.com/LunaOS/pkgbuilds/lunaos-core-pkgbuilds/system/base/mkarchiso)
 
 ### Development 
 
