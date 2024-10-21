@@ -5,7 +5,6 @@ linux-lts
 linux-lts-headers
 linux-firmware
 hdparm
-memtest86+
 memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
@@ -13,6 +12,7 @@ mkinitcpio-nfs-utils
 micro
 xclip
 lsof
+htop
 lrzip
 unrar
 unzip
@@ -28,7 +28,6 @@ wireplumber
 archlinux-keyring
 git
 refresh-mirrors
-haveged
 
 ## Additional
 plymouth
@@ -68,7 +67,6 @@ qemu-guest-agent
 spice-vdagent
 
 ## Filesystem
-bcachefs-tools
 btrfs-progs
 cryptsetup
 dmraid
@@ -135,7 +133,8 @@ gnome-calculator
 gnome-control-center
 gnome-console
 gnome-disk-utility
-gnome-system-monitor
+resources
+loupe
 gnome-keyring
 gnome-menus
 gnome-session
