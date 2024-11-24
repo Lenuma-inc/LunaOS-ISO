@@ -5,6 +5,7 @@ linux-lts
 linux-lts-headers
 linux-firmware
 linux-firmware-neptune
+linux-firmware-asus
 hdparm
 memtest86+-efi
 mkinitcpio
