@@ -4,6 +4,7 @@ base
 linux-lts
 linux-lts-headers
 linux-firmware
+linux-firmware-neptune
 hdparm
 memtest86+-efi
 mkinitcpio
