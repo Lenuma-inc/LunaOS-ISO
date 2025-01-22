@@ -1,7 +1,7 @@
 ## Base
 arch-install-scripts
 base
-linux-lts
+linux-fsync-nobara
 linux-firmware
 linux-firmware-neptune
 hdparm
@@ -50,6 +50,8 @@ xf86-input-synaptics
 xf86-input-vmmouse
 xf86-input-void
 
+## Bluetooth
+bluez
 
 ## Ucode
 amd-ucode
