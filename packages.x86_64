@@ -6,6 +6,7 @@ linux-firmware
 linux-firmware-neptune
 hdparm
 memtest86+-efi
+memtest86+
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
