@@ -1,10 +1,10 @@
 ## Base
 arch-install-scripts
 base
-bolt
-linux-fsync-nobara
+linux-lts
 linux-firmware
 linux-firmware-neptune
+apple-bcm-firmware
 hdparm
 memtest86+-efi
 memtest86+
@@ -33,6 +33,7 @@ refresh-mirrors
 
 ## Additional
 plymouth
+bolt
 
 ## Fonts
 noto-fonts
