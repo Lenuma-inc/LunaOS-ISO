@@ -1,6 +1,7 @@
 ## Base
 arch-install-scripts
 base
+bolt
 linux-fsync-nobara
 linux-firmware
 linux-firmware-neptune
