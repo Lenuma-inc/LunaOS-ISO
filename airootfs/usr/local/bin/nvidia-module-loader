@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+# Quick pass if one of the modules is already loaded.
+if [[ -e /sys/module/nvidia || -e /sys/module/nouveau ]]; then
+    exit 0
+fi
+
+lspci_output=$(lspci -k | grep VGA | tr -d '\n')
+
+# Using "install" in modprobe seems to result in no dependency resolving for
+# modules, so we have to manually set the order in which all modules are loaded
+# at once.
+load_nvidia_modules() {
+    local pkgname="$1"
+
+    # Load some basic dependencies of nvidia modules
+    modprobe video
+    modprobe drm_ttm_helper
+    modprobe drm_kms_helper
+
+    for module in nvidia nvidia-modeset nvidia-drm nvidia-uvm; do
+        modprobe --ignore-install "/usr/share/modules/${pkgname}/${module}.ko.zst"
+    done
+}
+
+nvidia_check_arch () {
+    if echo "$lspci_output" | grep -i "nvidia" ; then
+        [[ "$lspci_output" == *G[0-9]* ]] || [[ "$lspci_output" == *GT[0-9]* ]] || [[ "$lspci_output" == *MCP[0-9]* ]] && nv_arch=Tesla
+        [[ "$lspci_output" == *GF[0-9]* ]] && nv_arch=Fermi
+        [[ "$lspci_output" == *GK[0-9]* ]] && nv_arch=Kepler
+        [[ "$lspci_output" == *GM[0-9]* ]] && nv_arch=Maxwell
+        [[ "$lspci_output" == *GP[0-9]* ]] && nv_arch=Pascal
+        [[ "$lspci_output" == *GV[0-9]* ]] && nv_arch=Volta
+    fi
+}
+
+nvidia_check_arch
+
+# Nvidia GPU driver installation
+if echo "$lspci_output" | grep -qi "nvidia"; then
+    case "$nv_arch" in
+        Tesla|Fermi|Kepler)
+            modprobe nouveau
+            ;;
+        Maxwell|Pascal|Volta)
+            load_nvidia_modules lunaos-modules-nvidia-proprietary
+            ;;
+        *)
+            load_nvidia_modules lunaos-modules-nvidia-open
+            ;;
+    esac
+fi
+
+# Otherwise, do a fallback to nouveau anyway
+if [[ ! -e /sys/module/nouveau && ! -e /sys/module/nvidia ]]; then
+    modprobe nouveau
+fi

@@ -40,7 +40,6 @@ noto-fonts
 noto-fonts-cjk
 
 ## XORG
-xf86-input-libinput
 xorg-server
 xorg-xdpyinfo
 xorg-xinit
@@ -52,6 +51,9 @@ xf86-input-libinput
 xf86-input-synaptics
 xf86-input-vmmouse
 xf86-input-void
+xf86-video-amdgpu
+xf86-video-fbdev
+xf86-video-nouveau
 
 ## Bluetooth
 bluez
@@ -66,6 +68,7 @@ virtualbox-guest-utils
 hyperv
 qemu-guest-agent
 spice-vdagent
+vulkan-virtio
 
 ## Filesystem
 btrfs-progs
@@ -117,6 +120,8 @@ lunaos-hooks
 lunaos-calamares
 lunaos-calamares-config
 lunaos-settings-handheld
+lunaos-modules-nvidia-proprietary
+lunaos-modules-nvidia-open
 lpm
 
 ## Chaotic-AUR

@@ -21,4 +21,5 @@ file_permissions=(
   ["/root/.gnupg"]="0:0:700"
   ["/etc/polkit-1/rules.d"]="0:0:750"
   ["/etc/sudoers.d"]="0:0:750"
+  ["/usr/local/bin/nvidia-module-loader"]="0:0:755"
 )
