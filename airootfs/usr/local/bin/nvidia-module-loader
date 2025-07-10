@@ -36,19 +36,15 @@ nvidia_check_arch () {
 
 nvidia_check_arch
 
-# Nvidia GPU driver installation
-if echo "$lspci_output" | grep -qi "nvidia"; then
-    case "$nv_arch" in
-        Tesla|Fermi|Kepler)
-            modprobe nouveau
-            ;;
-        Maxwell|Pascal|Volta)
-            load_nvidia_modules lunaos-modules-nvidia-proprietary
-            ;;
-        *)
-            load_nvidia_modules lunaos-modules-nvidia-open
-            ;;
-    esac
+# Check for Nvidia GPU and install appropriate driver
+if echo "$lspci_output" | grep -i "nvidia"; then
+    if [ "$nv_arch" == "Fermi" ] || [ "$nv_arch" == "Tesla" ] || [ "$nv_arch" == "Kepler" ]; then
+        modprobe nouveau
+    elif [ "$nv_arch" == "Maxwell" ] || [ "$nv_arch" == "Pascal" ] || [ "$nv_arch" == "Volta" ]; then
+        load_nvidia_modules lunaos-modules-nvidia-proprietary
+    else
+        load_nvidia_modules lunaos-modules-nvidia-open
+    fi
 fi
 
 # Otherwise, do a fallback to nouveau anyway
