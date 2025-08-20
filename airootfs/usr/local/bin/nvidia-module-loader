@@ -24,13 +24,20 @@ load_nvidia_modules() {
 }
 
 nvidia_check_arch () {
-    if echo "$lspci_output" | grep -i "nvidia" ; then
-        [[ "$lspci_output" == *G[0-9]* ]] || [[ "$lspci_output" == *GT[0-9]* ]] || [[ "$lspci_output" == *MCP[0-9]* ]] && nv_arch=Tesla
-        [[ "$lspci_output" == *GF[0-9]* ]] && nv_arch=Fermi
-        [[ "$lspci_output" == *GK[0-9]* ]] && nv_arch=Kepler
-        [[ "$lspci_output" == *GM[0-9]* ]] && nv_arch=Maxwell
-        [[ "$lspci_output" == *GP[0-9]* ]] && nv_arch=Pascal
-        [[ "$lspci_output" == *GV[0-9]* ]] && nv_arch=Volta
+    if echo "$lspci_output" | grep -qi "nvidia"; then
+        if [[ "$lspci_output" == *G[0-9]* ]] || [[ "$lspci_output" == *GT[0-9]* ]] || [[ "$lspci_output" == *MCP[0-9]* ]]; then
+            nv_arch=Tesla
+        elif [[ "$lspci_output" == *GF[0-9]* ]]; then
+            nv_arch=Fermi
+        elif [[ "$lspci_output" == *GK[0-9]* ]]; then
+            nv_arch=Kepler
+        elif [[ "$lspci_output" == *GM[0-9]* ]]; then
+            nv_arch=Maxwell
+        elif [[ "$lspci_output" == *GP[0-9]* ]]; then
+            nv_arch=Pascal
+        elif [[ "$lspci_output" == *GV[0-9]* ]]; then
+            nv_arch=Volta
+        fi
     fi
 }
 
