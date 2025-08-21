@@ -23,20 +23,24 @@ load_nvidia_modules() {
     done
 }
 
-nvidia_check_arch () {
+nvidia_check_arch() {
     if echo "$lspci_output" | grep -qi "nvidia"; then
-        if [[ "$lspci_output" == *G[0-9]* ]] || [[ "$lspci_output" == *GT[0-9]* ]] || [[ "$lspci_output" == *MCP[0-9]* ]]; then
-            nv_arch=Tesla
-        elif [[ "$lspci_output" == *GF[0-9]* ]]; then
-            nv_arch=Fermi
-        elif [[ "$lspci_output" == *GK[0-9]* ]]; then
-            nv_arch=Kepler
-        elif [[ "$lspci_output" == *GM[0-9]* ]]; then
-            nv_arch=Maxwell
-        elif [[ "$lspci_output" == *GP[0-9]* ]]; then
-            nv_arch=Pascal
-        elif [[ "$lspci_output" == *GV[0-9]* ]]; then
-            nv_arch=Volta
+        chip_name=$(echo "$lspci_output" | grep -i "nvidia" | sed -n 's/.*NVIDIA Corporation \([A-Z0-9]*\).*/\1/p' | head -1)
+
+        if [[ "$chip_name" == G[0-9]* ]] || [[ "$chip_name" == GT[0-9]* ]] || [[ "$chip_name" == MCP[0-9]* ]]; then
+            nv_arch="Tesla"
+        elif [[ "$chip_name" == GF[0-9]* ]]; then
+            nv_arch="Fermi"
+        elif [[ "$chip_name" == GK[0-9]* ]]; then
+            nv_arch="Kepler"
+        elif [[ "$chip_name" == GM[0-9]* ]]; then
+            nv_arch="Maxwell"
+        elif [[ "$chip_name" == GP[0-9]* ]]; then
+            nv_arch="Pascal"
+        elif [[ "$chip_name" == GV[0-9]* ]]; then
+            nv_arch="Volta"
+        else
+            nv_arch="Open"
         fi
     fi
 }
@@ -49,7 +53,7 @@ if echo "$lspci_output" | grep -i "nvidia"; then
         modprobe nouveau
     elif [ "$nv_arch" == "Maxwell" ] || [ "$nv_arch" == "Pascal" ] || [ "$nv_arch" == "Volta" ]; then
         load_nvidia_modules lunaos-modules-nvidia-proprietary
-    else
+    elif [ "$nv_arch" == "Open" ]; then
         load_nvidia_modules lunaos-modules-nvidia-open
     fi
 fi
