@@ -5,7 +5,7 @@ linux-lts
 linux-firmware
 apple-bcm-firmware
 hdparm
-memtest86+
+memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
@@ -21,6 +21,7 @@ p7zip
 zip
 sudo
 alsa-utils
+pipewire-jack
 pipewire-pulse
 wireplumber
 archlinux-keyring
