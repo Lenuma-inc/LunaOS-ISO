@@ -3,10 +3,8 @@ arch-install-scripts
 base
 linux-lts
 linux-firmware
-linux-firmware-neptune
 apple-bcm-firmware
 hdparm
-memtest86+-efi
 memtest86+
 mkinitcpio
 mkinitcpio-archiso
@@ -23,13 +21,10 @@ p7zip
 zip
 sudo
 alsa-utils
-pipewire-alsa
-pipewire-jack
 pipewire-pulse
 wireplumber
 archlinux-keyring
 git
-refresh-mirrors
 
 ## Additional
 plymouth
