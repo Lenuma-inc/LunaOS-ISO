@@ -90,11 +90,11 @@ jobs:
           sudo pacman -Sy
           sudo mkarchiso -v -w . -o build .
 
-      - name: Create latest symlink
+      - name: Move ISO ta latest
         run: |
           cd build/
           ISO_FILE=$(ls *.iso | head -1)
-          ln -sf "$ISO_FILE" lunaos-latest-x86_64.iso
+          mv -v "$ISO_FILE" lunaos-latest-x86_64.iso
 
       - name: Generate checksum and sign ISO
         run: |
