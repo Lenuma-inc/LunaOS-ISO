@@ -1,0 +1,112 @@
+name: Building LunaOS ISO
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    permissions:
+      contents: write
+
+    container:
+      image: archlinux:base-devel
+      options: --privileged
+
+    env:
+      GPG_PASSPHRASE: ${{ secrets.PASSPHRASE }}
+      GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+
+    steps:
+
+      - name: Import GPG private key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ env.GPG_PRIVATE_KEY }}
+          passphrase: ${{ env.GPG_PASSPHRASE }}
+          trust_level: 5
+
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Prepare container
+        run: |
+          pacman -Syuu --noconfirm --needed archiso xz zstd git gnupg zip curl
+
+          LUNA_KEYRING_URL=$(curl -s https://api.github.com/repos/lenuma-inc/lunaos-repo/releases/latest \
+            | grep browser_download_url \
+            | grep 'lunaos-keyring' \
+            | grep '.pkg.tar.zst' \
+            | grep -v '.sig' \
+            | cut -d '"' -f 4)
+
+          LUNA_MIRRORLIST_URL=$(curl -s https://api.github.com/repos/lenuma-inc/lunaos-repo/releases/latest \
+            | grep browser_download_url \
+            | grep 'lunaos-mirrorlist' \
+            | grep '.pkg.tar.zst' \
+            | grep -v '.sig' \
+            | cut -d '"' -f 4)
+
+          # Chaotic-AUR and yours repository keys
+          yes | pacman -Scc
+          pacman-key --init
+          pacman-key --recv-key 3056513887B78AEB 78B2BAAB82C8D511 --keyserver keyserver.ubuntu.com
+          pacman-key --lsign-key 3056513887B78AEB 78B2BAAB82C8D511
+
+          pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
+          pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+
+          pacman -U --noconfirm "$LUNA_KEYRING_URL"
+          pacman -U --noconfirm "$LUNA_MIRRORLIST_URL"
+          pacman-key --populate
+
+          # Enable the multilib repository
+          cat << EOM >> /etc/pacman.conf
+          [multilib]
+          Include = /etc/pacman.d/mirrorlist
+
+          [lunaos-repo]
+          Include = /etc/pacman.d/lunaos-mirrorlist
+          SigLevel = Never
+
+          [chaotic-aur]
+          Include = /etc/pacman.d/chaotic-mirrorlist
+          SigLevel = Never
+          EOM
+
+          yes | pacman -Scc
+
+          pacman -Syyuu --noconfirm
+
+          useradd -m -G wheel -s /bin/bash user && echo "user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+          chown user:user -R ..
+
+      - name: Build LunaOS ISO
+        run: |
+          sudo pacman -Sy
+          sudo mkarchiso -v -w . -o build .
+
+      - name: Create latest symlink
+        run: |
+          cd build/
+          ISO_FILE=$(ls *.iso | head -1)
+          ln -sf "$ISO_FILE" lunaos-latest-x86_64.iso
+
+      - name: Generate checksum and sign ISO
+        run: |
+          cd build/
+          sha256sum lunaos-latest-x86_64.iso > lunaos-latest-x86_64.iso.sha256sum
+          gpg --pinentry-mode loopback --batch --yes --passphrase "$GPG_PASSPHRASE" --detach-sign --armor lunaos-latest-x86_64.iso
+
+      - name: Release ISO to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: build/
+          server-dir: iso/
