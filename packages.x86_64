@@ -116,6 +116,7 @@ lunaos-hooks
 lunaos-calamares
 lunaos-calamares-config
 lunaos-settings-handheld
+lunaos-settings-t2
 lunaos-modules-nvidia-proprietary
 lunaos-modules-nvidia-open
 lpm
