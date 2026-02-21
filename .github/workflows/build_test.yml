@@ -52,6 +52,8 @@ jobs:
             | cut -d '"' -f 4)
 
           # Chaotic-AUR and yours repository keys
+          # Remove broken cache directories before cleaning
+          rm -rf /var/cache/pacman/pkg/download-*
           yes | pacman -Scc
           pacman-key --init
           pacman-key --recv-key 3056513887B78AEB 78B2BAAB82C8D511 --keyserver keyserver.ubuntu.com
@@ -78,6 +80,8 @@ jobs:
           SigLevel = Never
           EOM
 
+          # Remove broken cache directories before cleaning
+          rm -rf /var/cache/pacman/pkg/download-*
           yes | pacman -Scc
 
           pacman -Syyuu --noconfirm
@@ -94,7 +98,7 @@ jobs:
         run: |
           cd build/
           ISO_FILE=$(ls *.iso | head -1)
-          mv -v "$ISO_FILE" lunaos-latest-test-x86_64.iso
+          mv -v "$ISO_FILE" lunaos-latest-x86_64.iso
 
       - name: Release ISO to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -103,4 +107,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build/
-          server-dir: iso/
+          server-dir: iso/test/

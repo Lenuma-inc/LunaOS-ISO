@@ -52,6 +52,8 @@ jobs:
             | cut -d '"' -f 4)
 
           # Chaotic-AUR and yours repository keys
+          # Remove broken cache directories before cleaning
+          rm -rf /var/cache/pacman/pkg/download-*
           yes | pacman -Scc
           pacman-key --init
           pacman-key --recv-key 3056513887B78AEB 78B2BAAB82C8D511 --keyserver keyserver.ubuntu.com
@@ -78,6 +80,8 @@ jobs:
           SigLevel = Never
           EOM
 
+          # Remove broken cache directories before cleaning
+          rm -rf /var/cache/pacman/pkg/download-*
           yes | pacman -Scc
 
           pacman -Syyuu --noconfirm
