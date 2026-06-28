@@ -19,7 +19,7 @@ load_nvidia_modules() {
     modprobe drm_kms_helper
 
     for module in nvidia nvidia-modeset nvidia-drm nvidia-uvm; do
-        modprobe --ignore-install "/usr/share/modules/${pkgname}/${module}.ko.zst"
+        modprobe --ignore-install "/usr/share/modules/${pkgname}/${module}.ko.xz"
     done
 }
 
