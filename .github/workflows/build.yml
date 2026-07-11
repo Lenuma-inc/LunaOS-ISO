@@ -35,7 +35,7 @@ jobs:
 
       - name: Prepare container
         run: |
-          pacman -Syuu --noconfirm --needed archiso xz zstd git gnupg zip curl
+          pacman -Syuu --noconfirm --needed archiso xz zstd git gnupg zip curl lftp
 
           LUNA_KEYRING_URL=$(curl -s https://api.github.com/repos/lenuma-inc/lunaos-repo/releases/latest \
             | grep browser_download_url \
@@ -107,10 +107,15 @@ jobs:
           gpg --pinentry-mode loopback --batch --yes --passphrase "$GPG_PASSPHRASE" --detach-sign --armor lunaos-latest-x86_64.iso
 
       - name: Release ISO to FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: build/
-          server-dir: iso/
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        run: |
+          ls -lh build/
+          ISO_SIZE_BYTES=$(stat -c%s build/lunaos-latest-x86_64.iso)
+          START_TIME=$(date +%s)
+          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "ftp://$FTP_SERVER" -e "set cmd:fail-exit yes; set cmd:trace yes; set net:timeout 30; set net:max-retries 3; set net:reconnect-interval-base 5; set log:enabled yes; set log:enabled/xfer yes; set log:file /dev/stderr; set ftp:passive-mode yes; set ftp:ssl-allow no; set ftp:use-feat yes; set ftp:rest-stor yes; set xfer:buffer-size 0x40000; cd lenuma.ru/public_html/iso; rm -f lunaos-latest-x86_64.iso lunaos-latest-x86_64.iso.sha256sum lunaos-latest-x86_64.iso.asc; put build/lunaos-latest-x86_64.iso; put build/lunaos-latest-x86_64.iso.sha256sum; put build/lunaos-latest-x86_64.iso.asc; cls -l .; quit"
+          END_TIME=$(date +%s)
+          ELAPSED=$((END_TIME - START_TIME))
+          awk -v bytes="$ISO_SIZE_BYTES" -v seconds="$ELAPSED" 'BEGIN { if (seconds > 0) printf "Upload speed: %.2f MiB/s (%.2f Mbit/s), elapsed: %ds\n", bytes / seconds / 1024 / 1024, bytes * 8 / seconds / 1000 / 1000, seconds }'
